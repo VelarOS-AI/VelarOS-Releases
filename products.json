@@ -23,6 +23,13 @@
       "sourceRepository": "VelarOS-AI/VelarOS-Platform",
       "tagPrefix": "host-v",
       "platforms": ["darwin-arm64", "win32-x64", "linux-x64"]
+    },
+    {
+      "id": "document-renderer",
+      "name": "Velar Document Renderer",
+      "sourceRepository": "VelarOS-AI/VelarOS-Platform",
+      "tagPrefix": "document-renderer-v",
+      "platforms": ["darwin-arm64", "win32-x64", "linux-x64"]
     }
   ],
   "artifactFamilies": [

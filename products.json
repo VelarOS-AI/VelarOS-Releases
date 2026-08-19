@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "repository": "Error-Zhang/VelarOS-Releases",
+  "policy": {
+    "visibility": "private",
+    "candidateType": "github-prerelease",
+    "macBuildLocation": "local-release-mac",
+    "windowsBuildLocation": "source-repository-github-actions",
+    "linuxBuildLocation": "source-repository-github-actions",
+    "immutableAssets": true
+  },
+  "products": [
+    {
+      "id": "desktop",
+      "name": "VelarOS Desktop",
+      "sourceRepository": "VelarOS-AI/VelarOS-Desktop",
+      "tagPrefix": "desktop-v",
+      "platforms": ["darwin-arm64", "win32-x64", "linux-x64"]
+    },
+    {
+      "id": "host",
+      "name": "Velar Host",
+      "sourceRepository": "VelarOS-AI/VelarOS-Platform",
+      "tagPrefix": "host-v",
+      "platforms": ["darwin-arm64", "win32-x64", "linux-x64"]
+    }
+  ],
+  "artifactFamilies": [
+    {
+      "id": "resource-plugin",
+      "sourceRepository": "VelarOS-AI/VelarOS-Desktop",
+      "tagPrefix": "plugin-"
+    }
+  ]
+}

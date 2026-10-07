@@ -7,6 +7,9 @@ Public, free binary artifact store for every independently packaged VelarOS prod
 - Every product uses a unique tag prefix, such as `desktop-v<version>` or `host-v<version>`.
 - macOS products are built, signed, notarized, and staged on the release Mac. Windows and Linux
   products are built natively in the owning source repository's GitHub Actions workflow.
+- The lightweight Extension Host is built natively on all three systems in the Extension source
+  repository's GitHub Actions workflow. Its `extension-host-v<version>` releases contain runtime
+  files for system Node.js 24+, while `extension-v<version>` contains the matching browser ZIP.
 - GitHub prereleases are public candidates; VelarOS Cloud independently decides which version is current in product download and update flows.
 - VelarOS Cloud administrators control the active website version.
 - Release assets are immutable; bump the component version instead of replacing bytes.
